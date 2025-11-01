@@ -32,7 +32,6 @@ def thuc_hien_xor(du_lieu_bytes: bytes, khoa: str) -> bytearray:
 # --- Giao diện Streamlit ---
 
 st.title("XOR Cipher — Mã hóa / Giải mã")
-st.markdown("Sử dụng thuật toán **XOR Bitwise** đơn giản. Hỗ trợ mọi ký tự Unicode.")
 st.markdown("Văn bản mã hóa sẽ được hiển thị dưới dạng **Base64** để đảm bảo an toàn và khả năng in.")
 
 # Sử dụng tên biến tiếng Việt cho giao diện
@@ -88,3 +87,4 @@ if st.button("Thực hiện"):
 
         except Exception as e:
             st.error(f"Đã xảy ra lỗi không mong muốn: {e}")
+
